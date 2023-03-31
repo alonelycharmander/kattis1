@@ -1,3 +1,4 @@
+import sys
 def daylight(riseh, risem, seth, setm):
     min_rise = (int(riseh)*60) + int(risem)
     min_set = (int(seth)*60) + int(setm)
@@ -9,7 +10,7 @@ def daylight(riseh, risem, seth, setm):
 
 cin = input()
 tmp = cin.split()
-while cin != "":
+for line in sys.stdin:
     if len(tmp[3]) < 5:
         hrise = tmp[3][0]
         mrise = tmp[3][2:]
